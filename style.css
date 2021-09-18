@@ -136,23 +136,11 @@ body {
     flex-direction: row-reverse;
     align-items: center;
   }
-
-.restaurant__list__container {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
- }
-
- .restaurant__list__row_1 {
-   justify-content: center;
- }
- .restaurant__list__row_2 {
-   margin-top: 3px;
-   align-items: flex-start;
-   justify-content: center;
- }
-
 }
+
+
+
+
 
 @media (min-width: 1024px) {
   .container {
@@ -184,20 +172,53 @@ body {
      font-size: 48px;
    }
 
-   email__subcribe__container {
+   .restaurant__list__container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 3rem;
+ }
+
+.restaurant__list__text {
+  font-size: 50px;
+}
+
+.text-xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    color: #1d3557;
+    font-weight: 900;
+}
+
+
+.restaurant__list__images__container {
+  display: flex;
+  align-items: space-evenly;
+}
+
+ .restaurant__list__row_1 {
+     display: flex;
+     align-items: baseline;
+     justify-content: center;
+
+ }
+
+ .restaurant__list__row_2 {
+     margin-top: 3px;
+     align-items: flex-start;
+     justify-content: center;
+ }
+
+
+
+   .email__subcribe__container {
        display: flex;
        justify-content: center;
    }
-   
-   .email__subcribe__container {
-       margin-top: 3rem;
-       width: 100%;
-       padding: 15px;
-       margin-right: auto;
-       margin-left: auto;
-   }
 
-   .quote_image_text {
+
+
+   .quote__image__text {
        color: #fff;
        z-index: 3;
        margin: 0 1rem;
@@ -235,6 +256,12 @@ align-items: center;
 }
 
 
+
+
+
+
+
+
 .food__list__viewmore {
   margin: 2rem 0;
   transition: 0.3s;
@@ -246,31 +273,24 @@ align-items: center;
 }
 
 .restaurant__list__text {
-margin: 1rem 0;
+    margin: 1rem 0;
 }
 
 .text-xl {
-  font-weight: 800;
-  font-size: 30px;
-  margin: 20px 0;
-  color: #1d3557;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #1d3557;
+    font-weight: 900;
 }
 
 h4 {
     display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
-.restaurant__list__row_1 {
-display: flex;
-align-items: baseline;
-}
-
-.restaurant__list__row_2 {
-margin-top: 10px;
-display: flex;
-align-items: flex-start;
-flex-direction: row-reverse;
-}
 .restaurant2,
 .restaurant4 {
 border-radius: 4px;
@@ -280,6 +300,7 @@ height: 100px;
 box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
   0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
+
 .restaurant1,
 .restaurant3 {
 border-radius: 4px;
@@ -289,6 +310,20 @@ height: 80px;
 box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
   0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
+
+.restaurant__list__row_1 {
+    display: flex;
+    align-items: baseline;
+}
+
+.restaurant__list__row_2 {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
+
+
 
 .email__subcribe__container {
     margin-top: 3rem;
@@ -315,7 +350,7 @@ box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
 
 .button__primary {
     margin: 10px;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     text-align: center;
     text-transform: capitalize;
     transition: 0.5s;
@@ -331,7 +366,7 @@ box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
 button {
     border: none;
     cursor: pointer;
-    appearence: auto;
+
 }
 
 .quote__container {
@@ -348,7 +383,7 @@ button {
     margin-bottom: 50px;
 }
 
-.quote_image_overlay {
+.quote__image__overlay {
     position: absolute;
     height: 200px;
     width: 100%;
@@ -357,7 +392,7 @@ button {
     opacity: 49%;
 }
 
-.quote_image_text {
+.quote__image__text {
     color: #fff;
     z-index: 3;
     margin: 0 1rem;
